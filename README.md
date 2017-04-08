@@ -3,15 +3,19 @@
 W celu oszacowania czasu wykonania programu kuszące jest czasem zalozyc liniowa złożoność obliczeniowa.
 Czas sortowania możemy oszacować monotonicznej listy na 17.9 us dla 1000 elementów:
 
+```bash
+python -m timeit -s "s = list(range(1000))" "sorted(s)"
+100000 loops, best of 3: 17.9 usec per loop
 ```
-python -m timeit -s "s = list(range(1000))" "sorted(s)"                                                                     100000 loops, best of 3: 17.9 usec per loop
-```
+
 
 Próbując uogólnić ten wynik na listę składająca sie z 10^6 elementów spodziewalibyśmy się wyniku okolo 18 ms. Dokonując pomiaru otrzymujemy jednak czas o około 35% większy: 
 
+```bash
+python -m timeit -s "s = list(range(1000000))" "sorted(s)"
+10 loops, best of 3: 24.5 msec per loop
 ```
-python -m timeit -s "s = list(range(1000000))" "sorted(s)"                                                                  10 loops, best of 3: 24.5 msec per loop
-```
+
 
 Przygotuj program do automatycznego wyznaczania złożoności obliczeniowej.
 
