@@ -1,1 +1,4 @@
-
+https://github.com/AGHPythonCourse2017/zad01-thunder94/pull/1
+https://github.com/AGHPythonCourse2017/zad01-adudzik/pull/1#pullrequestreview-36795184
+https://github.com/AGHPythonCourse2017/zad01-opawelek/pull/1#pullrequestreview-36825217
+https://github.com/AGHPythonCourse2017/zad01-Kotwic4/pull/3#pullrequestreview-36827015
